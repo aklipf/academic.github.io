@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% set data = load_data(path="content/info.toml") %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{data.author.name}}</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        {{data.author.name}}<br>
+        {{data.author.description}}<br>
+        {{data.author.location}}<br>
+        {{data.author.email}}<br>
+        {{data.author.github}}<br>
+        {{data.author.scholar}}<br>
+        {{data.author.orcid}}<br>
+        
+
+        <section class="section">
+            <div class="container">
+                {% block content %} {% endblock %}
+            </div>
+        </section>
+    </body>
+</html>
