@@ -1,0 +1,35 @@
+<div class="avatar">
+    {% set image = resize_image(path="images/profile.png", width=135, op="fit_width" ) %}
+    <img src="{{ image.url }}" alt="{{data.author.name}}">
+</div>
+
+<div class="description">
+    <h3>{{data.author.name}}</h3>
+    <div>{{data.author.description}}</div>
+</div>
+
+<div class="contact">
+    <div>
+        {% include "icons/map-marker.html" %} {{data.author.location}}
+    </div>
+    <div>
+        <a href="mailto:{{data.author.email}}">
+            {% include "icons/envelope.html" %} {{data.author.email}}
+        </a>
+    </div>
+    <div>
+        <a href="{{data.author.github}}">
+            {% include "icons/github.html" %} Github
+        </a>
+    </div>
+    <div>
+        <a href="{{data.author.scholar}}">
+            {% include "icons/graduation-cap.html" %} Google Scholar
+        </a>
+    </div>
+    <div>
+        <a href="{{data.author.orcid}}">
+            {% include "icons/orcid.html" %} ORCID
+        </a>
+    </div>
+</div>

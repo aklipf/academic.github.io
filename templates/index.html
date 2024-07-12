@@ -2,7 +2,7 @@
 
 {% block content %}
 
-{% set page = get_page(path="presentation.md") %}
+{% set page = get_page(path=section.extra.default_page) %}
 
 {{ page.content | safe }}
 

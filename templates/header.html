@@ -1,0 +1,11 @@
+<div>
+    <a href="/" class="home">{{ data.author.name }}</a>
+</div>
+
+{% set section = get_section(path="_index.md") %}
+
+{% for page in section.pages %}
+<div>
+    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+</div>
+{% endfor %}

@@ -1,0 +1,52 @@
+i.icon
+    margin-right: 0.3em
+
+.icon svg path
+    fill: currentcolor
+
+.sidebar
+    > div
+        margin: 10px
+
+    font-size: 0.8em
+    margin-right: 3em
+
+.avatar img
+    border-radius: 50%
+
+.description
+    h3
+        margin-top: 0
+        margin-bottom: 0.5em
+
+.contact
+    div
+        margin-top: 0.6em
+        margin-bottom: 0.6em
+
+    a
+        text-decoration: none
+        color: inherit !important
+
+@media screen and (max-width: 800px)
+    .sidebar
+        font-size: 0.9em
+
+    div.sidebar
+        display: flex
+
+    div.avatar
+        width: 50px
+
+    div.description
+        flex-grow: 1
+
+        h3
+            margin-top: 0.25em
+            margin-bottom: 0px
+
+    .avatar img
+        width: 100%
+
+    .contact
+        display: none
