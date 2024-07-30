@@ -7,8 +7,9 @@ i.icon
     fill: currentcolor
 
 .sidebar
-    font-size: 0.9em
+    font-size: small
     margin-left: 1em
+    margin-right: 1em
 
     > div
         width: 100%
@@ -28,6 +29,7 @@ i.icon
             margin-bottom: 0px
 
         div
+            font-size: large
             margin-top: 0.1em
             margin-left: $margin
 
@@ -43,10 +45,8 @@ i.icon
             color: inherit !important
 
 
-
-@media screen and (min-width: 800px)
-    .sidebar
-        font-size: 0.8em
+    @media screen and (min-width: 800px)
+        font-size: small
         
         > div
             margin-right: 1em
@@ -68,6 +68,10 @@ i.icon
                     margin-left: $margin
                     margin-top: 0
                     margin-bottom: 0.5em
+                
+                div
+                    font-size: small
+
 
             .contact
                 display: block
