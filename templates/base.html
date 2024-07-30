@@ -4,23 +4,25 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{data.author.name}}</title>
     <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
-    <div class="header">
+    <header>
         {% include "header.html" %}
-    </div>
+    </header>
 
-    <div class="body">
-        <div class="sidebar">
+    <div class="main">
+        <nav class="sidebar">
             {% include "sidebar.html" %}
-        </div>
+        </nav>
 
-        <div class="content">
+        <article class="content">
             {% block content %} {% endblock content %}
-        </div>
+        </article>
+
     </div>
 </body>
 

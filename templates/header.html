@@ -1,11 +1,22 @@
-<div>
-    <a href="/" class="home">{{ data.author.name }}</a>
-</div>
+<div class="header">
+    <div class="home">
+        <a href="/">{{ data.author.name }}</a>
+    </div>
 
-{% set section = get_section(path="_index.md") %}
+    {% set section = get_section(path="_index.md") %}
 
-{% for page in section.pages %}
-<div>
-    <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+    <input class="unroll" type="checkbox" id="switch" />
+    <label class="unroll" for="switch">
+        <div>unroll</div>
+    </label>
+
+    <div class="menu">
+        <ul>
+            {% for page in section.pages %}
+            <li>
+                <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
-{% endfor %}

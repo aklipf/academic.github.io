@@ -1,23 +1,106 @@
-div.header
-    color: #7a8288
-    height: 4em
-    padding: 0
-    margin: 0
-    width: 100%
-    display: flex
+@import 'config'
 
-    > div
-        margin: 0 1em
-        height: 100%
-        display: flex
-        justify-content: center
-        align-items: center
+a
+    text-decoration: none
+    color: inherit !important
+
+ul
+    list-style: none
+
+.header
+    color: #7a8288
+
+    padding: 0
+    margin-bottom: 1em
+    border-bottom: 1px solid #f2f3f3
+
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    grid-template-rows: 4em
 
     .home
-        padding-left: 1em
-        padding-right: 2em
-        font-weight: bold
+        grid-column: 1 / 10
+        margin: auto
+        font-size: x-large
+        margin-left: 1.5em
+        a
+            width: 6em
+            font-weight: bold
+            
+    input.unroll[type=checkbox]
+        margin-left: auto
+        margin-right: 0
+        height: 0
+        width: 0
+        visibility: hidden
 
-    a
-        text-decoration: none
-        color: inherit !important
+    input.unroll[type=checkbox] + label
+        grid-column: 11 / 13
+        cursor: pointer
+        text-indent: -9999px
+        padding-top: 1.5em
+        margin-left: auto
+
+        div
+            margin-left: 1em
+            margin-right: 1em
+            width: 0
+            height: 0
+            border-left: 15px solid transparent
+            border-right: 15px solid transparent
+            border-top: 15px solid $font-color
+    
+    input.unroll[type=checkbox]:checked ~ .menu
+        display: block
+
+    input.unroll[type=checkbox]:checked + label > div
+        transform: rotate(180deg)
+
+    .menu
+        display: none
+        grid-column: 1 / 13
+        
+        font-size: large
+        padding: 0
+        margin: 0
+        margin-left: auto
+        width: 100%
+        height: 100%
+
+        ul
+            margin: 0
+            margin-top: 1em
+            padding: 0
+            li
+                height: 3em
+                a
+                    margin-left: 2em
+
+    @media screen and (min-width: 800px)
+        .home
+            grid-column: 1 / 4
+        .menu
+            grid-column: 4 / 12
+            display: block
+
+            ul
+                padding-left: 2em
+                display: block
+                height: 100%
+                li
+                    display: inline
+                    height: 100%
+                    a
+                        margin-left: 1em
+                    
+        .unroll
+            display: none
+
+
+    @media screen and (min-width: 1200px)
+        .home
+            grid-column: 1 / 3
+        .menu
+            grid-column: 3 / 11
+            padding-left: 0.5em
+

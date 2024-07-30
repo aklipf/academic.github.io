@@ -1,3 +1,5 @@
+$margin: 10px
+
 i.icon
     margin-right: 0.3em
 
@@ -5,48 +7,67 @@ i.icon
     fill: currentcolor
 
 .sidebar
+    font-size: 0.9em
+    margin-left: 1em
+
     > div
-        margin: 10px
-
-    font-size: 0.8em
-    margin-right: 3em
-
-.avatar img
-    border-radius: 50%
-
-.description
-    h3
-        margin-top: 0
-        margin-bottom: 0.5em
-
-.contact
-    div
-        margin-top: 0.6em
-        margin-bottom: 0.6em
-
-    a
-        text-decoration: none
-        color: inherit !important
-
-@media screen and (max-width: 800px)
-    .sidebar
-        font-size: 0.9em
-
-    div.sidebar
+        width: 100%
         display: flex
 
-    div.avatar
+    .avatar img
+        border-radius: 50%
         width: 50px
 
-    div.description
+    .description
         flex-grow: 1
 
         h3
-            margin-top: 0.25em
+            display: none
+            margin-left: $margin
+            margin-top: 0.1em
             margin-bottom: 0px
 
-    .avatar img
-        width: 100%
+        div
+            margin-top: 0.1em
+            margin-left: $margin
 
     .contact
         display: none
+
+        div
+            margin-top: 0.6em
+            margin-bottom: 0.6em
+
+        a
+            text-decoration: none
+            color: inherit !important
+
+
+
+@media screen and (min-width: 800px)
+    .sidebar
+        font-size: 0.8em
+        
+        > div
+            margin-right: 1em
+            margin-left: auto
+            flex-direction: column
+            min-width: 140px
+            width: 75%
+            max-width: 200px
+            
+            div
+                margin: $margin
+
+            .avatar img
+                width: 100%
+
+            .description
+                h3
+                    display: block
+                    margin-left: $margin
+                    margin-top: 0
+                    margin-bottom: 0.5em
+
+            .contact
+                display: block
