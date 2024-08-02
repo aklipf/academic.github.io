@@ -10,9 +10,13 @@ pdf = "/articles/empnn-aaai23.pdf"
 
 # Equivariant message passing neural network for crystal material discovery
 
-This article is about how to construct an equivariant action on the lattice of a crystal (periodic material). It also discusses the $\text{SL}_3(\mathbb{Z})$ group action on crystals.
+This article is about how to construct an equivariant action on the lattice of a crystal (periodic material). It also discusses the $$\text{SL}_3(\mathbb{Z})$$ group action on crystals.
 
-How to cite:
+> ![commutative diagram](/images/articles/groups.svg)
+> <p>Commutative diagram of $$\text{SL}_2(\mathbb{Z})$$ and $$\text{Euc}(2)$$</p>
+
+### How to cite
+
 ```bibtex
 @article{klipfel_empnn_aaai_2023,
     title={Equivariant Message Passing Neural Network for Crystal Material Discovery},

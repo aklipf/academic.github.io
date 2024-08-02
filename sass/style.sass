@@ -23,6 +23,10 @@ body
     padding-left: 1em
     padding-right: 1em
 
+    code
+        text-wrap: pretty
+        white-space: pre-line
+
     > h1
         font-size: xx-large
 
@@ -35,6 +39,18 @@ body
     > p
         font-size: medium
         text-align: justify
+
+    > blockquote
+        margin: 0.3em
+        text-align: center
+        font-style: italic
+        img
+            width: 100%
+
+        @media screen and (min-width: 800px)
+            margin: 1em
+            img
+                width: 80%
 
 .pdf
     all: revert
