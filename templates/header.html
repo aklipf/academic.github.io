@@ -12,11 +12,31 @@
 
     <div class="menu">
         <ul>
-            {% for page in section.pages %}
+            {% for item in config.extra.navbar %}
+
+            {% if item.url %}
             <li>
+
+                {% if item.url is ending_with("/_index.md") %}
+
+                {% set section = get_section(path=item.url) %}
+                <a href="{{ section.permalink | safe }}">{{ section.title }}</a>
+
+                {% elif item.url is ending_with(".md") %}
+
+                {% set page = get_page(path=item.url) %}
                 <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+
+                {% elif item.title %}
+
+                {% set url = get_url(path=item.url) %}
+                <a href="{{ url | safe }}">{{ item.title }}</a>
+
+                {% endif %}
             </li>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
+
 </div>
