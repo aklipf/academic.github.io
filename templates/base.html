@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-{% set data = load_data(path="content/info.toml") %}
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{data.author.name}}</title>
+    <title>{{config.extra.author.name}}</title>
     <link rel="stylesheet" href="/style.css" />
 
     <script type="text/x-mathjax-config">
