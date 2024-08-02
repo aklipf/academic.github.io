@@ -2,6 +2,42 @@
 
 {% block content %}
 
-{{ section.content | safe }}
+<h1>{{ section.title }}</h1>
+
+{% for page in section.pages %}
+<article class="item">
+    <h2><a href="{{ page.permalink }}">{{ page.title | title }}</a>{% if page.extra.pdf %} <a class="pdf"
+            href="{{ page.extra.pdf }}">[pdf]</a>{% endif%}</h2>
+    {% if page.date %}
+    <p class="date">
+        {{ page.date | date(format="%B %Y") }}
+    </p>
+    {% endif %}
+
+    {% set info = [] %}
+
+    {% if page.authors %}
+    {% set authors = page.authors | join(sep=", ")%}
+    {% set info=info | concat(with=authors)%}
+    {% endif %}
+
+    {% if page.extra.publisher %}
+    {% set info=info | concat(with=page.extra.publisher)%}
+    {% endif %}
+
+    {% if page.extra.location %}
+    {% set info=info | concat(with=page.extra.location)%}
+    {% endif %}
+
+
+    {% set length_info = info | length %}
+    {% if length_info != 0 %}
+    <p class="info">
+        {{info | join(sep=", ")}}
+    </p>
+    {% endif %}
+
+</article>
+{% endfor %}
 
 {% endblock content %}

@@ -1,6 +1,15 @@
----
-title: "Optimized crystallographic graph generation for material science"
----
++++
+title = "Optimized crystallographic graph generation for material science"
+date = 2023-08-01
+authors = ["A. Klipfel", "Y. Fregier", "A. Sayede","Z. Bouraoui"]
+[extra]
+location = "Macao, China"
+publisher = "IJCAI 2023"
+pdf = "/articles/graph-ijcai23.pdf"
++++
+
+# Optimized crystallographic graph generation for material science
+
 This article presents a Python package for generating graphs of periodic materials on a GPU. The package is compatible with pytorch.
 
 Github link: [crystallographic_graph](https://github.com/aklipf/mat-graph)

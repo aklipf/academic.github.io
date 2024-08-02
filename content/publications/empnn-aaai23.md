@@ -1,6 +1,15 @@
----
-title: "Equivariant message passing neural network for crystal material discovery"
----
++++
+title = "Equivariant message passing neural network for crystal material discovery"
+date = 2023-02-01
+authors = ["A. Klipfel", "Z. Bouraoui", "O. Peltre", "Y. Fregier", "N. Harrati", "A. Sayede"]
+[extra]
+location = "Washington D.C., United States"
+publisher = "AAAI 2023"
+pdf = "/articles/empnn-aaai23.pdf"
++++
+
+# Equivariant message passing neural network for crystal material discovery
+
 This article is about how to construct an equivariant action on the lattice of a crystal (periodic material). It also discusses the $\text{SL}_3(\mathbb{Z})$ group action on crystals.
 
 How to cite:

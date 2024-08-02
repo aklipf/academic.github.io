@@ -1,6 +1,15 @@
----
-title: "Unified Model for Crystalline Material Generation"
----
++++
+title = "Unified Model for Crystalline Material Generation"
+date = 2023-08-01
+authors = ["A. Klipfel", "Y. Fregier", "A. Sayede", "Z. Bouraoui"]
+[extra]
+location = "Macao, China"
+publisher = "AAAI 2023"
+pdf = "/articles/gemsnet-ijcai23.pdf"
++++
+
+# Unified Model for Crystalline Material Generation
+
 In this paper we have proposed an equivariant message passing neural network for periodic materials. Our proposed model is based on GemNet and can act on both atomic position and lattice shape.
 
 How to cite:
