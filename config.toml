@@ -1,4 +1,4 @@
-base_url = "https://astrid-klipfel.net"
+base_url = "https://research.astrid-klipfel.net"
 compile_sass = true
 build_search_index = false
 
