@@ -12,8 +12,8 @@ pdf = "/articles/gemsnet-ijcai23.pdf"
 
 In this paper we have proposed an equivariant message passing neural network for periodic materials. Our proposed model is based on GemNet and can act on both atomic position and lattice shape.
 
-> ![commutative diagram](/images/articles/vector_fields.png)
-> <p>Vector fields of the lattice parameters</p>
+![commutative diagram](/images/articles/vector_fields.png)
+> *Vector fields of the lattice parameters*
 
 ### How to cite
 

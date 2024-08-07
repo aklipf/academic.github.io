@@ -1,7 +1,0 @@
-+++
-title = "Resume"
-+++
-
-# Resume
-
-Resume

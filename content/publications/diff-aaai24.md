@@ -12,8 +12,9 @@ pdf = "/articles/diff-aaai24.pdf"
 
 This article proposes a new diffusion model for materials science. The diffusion process is performed on both atomic position and lattice shape and is based on a MPNN and vector fields.
 
-> ![diffusion](/images/articles/diffusion.svg)
-> <p>Diffusion process on periodic materials</p>
+![diffusion](/images/articles/diffusion.svg)
+> *Diffusion process on periodic materials*
+
 
 ### How to cite
 
