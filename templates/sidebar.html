@@ -1,7 +1,7 @@
 <div>
     <div class="avatar">
-        {% set image = resize_image(path="images/profile.png", width=135, op="fit_width" ) %}
-        <img src="{{ image.url }}" alt="{{config.extra.author.name}}">
+        {% set image = get_url(path="images/profile.jpg") %}
+        <img src="{{ image }}" alt="{{config.extra.author.name}}">
     </div>
 
     <div class="description">
