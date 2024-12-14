@@ -1,3 +1,5 @@
+@import '_config'
+
 $margin: 10px
 
 i.icon
@@ -18,8 +20,7 @@ i.icon
 
     .avatar img
         border-radius: 50%
-        border: 0.2em solid
-        border-color: #ebcfb5
+        border: 0.2em solid $avatar-color
         width: 75px
 
     .description
@@ -64,9 +65,8 @@ i.icon
                 display: block
                 margin-left: auto
                 margin-right: auto
-                border: 0.5em solid
+                border: 0.5em solid $avatar-color
                 width: 80%
-                border-color: #ebcfb5
 
             .description
                 h3
