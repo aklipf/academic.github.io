@@ -1,9 +1,9 @@
-base_url = "https://research.astrid-klipfel.net"
+base_url = "https://research.astrid-klipfel.fr"
 compile_sass = true
 build_search_index = false
 
 [markdown]
-highlight_code = true
+# highlight_code = true
 
 [extra]
 navbar=[
